@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebM Alpha Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff0000 25%, #00ff00 25%, #00ff00 50%, #ff0000 50%, #ff0000 75%, #00ff00 75%, #00ff00);
+            background-size: 40px 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .video-wrapper {
+            margin: 20px 0;
+            background: repeating-linear-gradient(
+                45deg,
+                #ccc,
+                #ccc 10px,
+                #fff 10px,
+                #fff 20px
+            );
+            padding: 20px;
+            border-radius: 5px;
+        }
+        video {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .video-list {
+            list-style: none;
+            padding: 0;
+        }
+        .video-list li {
+            margin: 10px 0;
+        }
+        .video-list button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .video-list button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 WebM Alpha Transparency Preview</h1>
+        
+        <div class="video-wrapper">
+            <video id="videoPlayer" controls autoplay loop>
+                <source src="grok-video-7d3547a9-5bfb-4995-a432-eed95d46d8ad (1).alpha.webm" type="video/webm">
+                Your browser doesn't support WebM with alpha channel.
+            </video>
+        </div>
+        
+        <div class="info">
+            <h3>Available Videos:</h3>
+            <ul class="video-list">
+                <li>
+                    <button onclick="loadVideo('grok-video-7d3547a9-5bfb-4995-a432-eed95d46d8ad (1).alpha.webm')">
+                        Video 1: grok-video-7d3547a9...
+                    </button>
+                </li>
+                <li>
+                    <button onclick="loadVideo('grok-video-08f6cd64-5ef9-4c45-a8c0-b71810bc2cf6.alpha.webm')">
+                        Video 2: grok-video-08f6cd64...
+                    </button>
+                </li>
+            </ul>
+            <p><strong>Background:</strong> The checkerboard pattern behind the video shows where transparency exists.</p>
+            <p><strong>Settings:</strong> BG=green, SIM=0.08, BLEND=0.15</p>
+        </div>
+    </div>
+    
+    <script>
+        function loadVideo(filename) {
+            const video = document.getElementById('videoPlayer');
+            video.src = filename;
+            video.load();
+            video.play();
+        }
+    </script>
+</body>
+</html>
