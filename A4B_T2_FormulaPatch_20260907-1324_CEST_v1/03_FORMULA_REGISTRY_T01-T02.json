@@ -1,0 +1,35 @@
+{
+  "pack": "A4B_T2_FormulaPatch_20260907-1324_CEST_v1",
+  "lane": "A4/A4B Deep Time & Civilizational Futures",
+  "scope": "Turns 1-2 formula/mechanism retrofit",
+  "count_lock": {
+    "new_937_confirmed": 0,
+    "active_937_holds": 15,
+    "new_104_confirmed": 0,
+    "paper_kernel_provisional": 1,
+    "paper_merge_branch": 4
+  },
+  "status_vocab": ["SOURCE-EXPLICIT","SOURCE-DERIVED","FORMALIZATION-CANDIDATE","ILLUSTRATIVE","REJECTED"],
+  "objects": [
+    {"id":"A4-FM-001","name":"PBEC experiential-yield functional","sources":["004:071"],"status":"FORMALIZATION-CANDIDATE","novelty":"provisional-paper-kernel","latex":"Y(T)=\\int_0^T q(t)p_M(t)u(F(t),I(t),C(t))n(t)\\,dt","action":"exact 104 occupancy + prior-art test"},
+    {"id":"A4-FM-002","name":"Novelty depletion / reset relation","sources":["004:071"],"status":"FORMALIZATION-CANDIDATE","novelty":"PBEC-child","latex":"\\frac{dn}{dt}=-\\lambda(F,D,R)n+\\rho(A,R_s)(1-n)","action":"do not count independently"},
+    {"id":"A4-FM-003","name":"Preference-manifold denominator drift","sources":["004:071"],"status":"SOURCE-DERIVED","novelty":"937-HOLD","latex":"M_{\\mathrm{eff}}(t)=M_0+\\Delta M_{\\mathrm{aug}}(t)","action":"exact 937 occupancy"},
+    {"id":"A4-FM-004","name":"Fidelity-saturation sign inversion","sources":["004:071"],"status":"SOURCE-DERIVED","novelty":"937-HOLD","latex":"\\partial u/\\partial F>0 \\;\\land\\; \\partial\\lambda/\\partial F>0","action":"preserve as PBEC discriminator"},
+    {"id":"A4-FM-005","name":"Enchantment precision-coherence window","sources":["005:092"],"status":"SOURCE-DERIVED","novelty":"merge-Threshold-Sense","latex":"E=f(P_s,P_c,K,A_t,R_r,J)","action":"formalize only after variable operationalization"},
+    {"id":"A4-FM-006","name":"Synthetic-ecology closure chain","sources":["005:075"],"status":"SOURCE-DERIVED","novelty":"KNOWN-NONNOVEL","latex":"\\text{integration}\\to\\text{persistence}\\to\\text{ecology}","action":"do not re-add broad Second Synthetic Biosphere"},
+    {"id":"A4-FM-007","name":"Existence/access/ownership/control non-equivalence","sources":["005:075","005:084"],"status":"SOURCE-DERIVED","novelty":"cross-domain-invariant","latex":"\\text{existence}\\neq\\text{access}\\neq\\text{ownership}\\neq\\text{control}","action":"A2 sovereignty cross-check"},
+    {"id":"A4-FM-008","name":"Post-linear seasonal biography transition","sources":["005:084"],"status":"SOURCE-DERIVED","provenance":"CONTROL-DEEP/RAW-REOPEN","novelty":"937-HOLD; merge Deep-Time Memory Resource Bound","latex":"\\text{longevity}\\to\\text{repeated epochs}\\to\\text{cyclical identity}\\to\\text{memory infrastructure}","action":"raw paragraph reopen"},
+    {"id":"A4-FM-009","name":"Deep-time memory resource balance","sources":["005:084"],"status":"FORMALIZATION-CANDIDATE","provenance":"CONTROL-DEEP/RAW-REOPEN","novelty":"merge-existing-paper-family","latex":"\\frac{dS_m}{dt}=\\kappa(t)A_m(t)-\\phi(t)S_m(t)+r(t)","action":"raw reopen + operational definitions"},
+    {"id":"A4-FM-010","name":"Role scarcity under material abundance","sources":["005:088"],"status":"SOURCE-DERIVED","provenance":"CONTROL-DEEP/RAW-REOPEN","novelty":"937-HOLD; merge Threshold Sense","latex":"\\text{material abundance}\\uparrow\\not\\Rightarrow\\text{recognized-role abundance}\\uparrow","action":"do not revive broad Second Scarcity"},
+    {"id":"A4-FM-011","name":"Persistent archive recursive meta-awareness loop","sources":["005:064"],"status":"SOURCE-DERIVED","provenance":"CONTROL-DEEP/RAW-REOPEN","novelty":"937-HOLD; merge Threshold Sense","latex":"\\text{archive evidence}\\to\\text{future-observer modelling}\\to\\text{self-monitoring}\\to\\text{weaker embeddedness}","action":"raw reopen"},
+    {"id":"A4-FM-012","name":"Causal-support lag / two-timeline persistence","sources":["006:042","006:043"],"status":"FORMALIZATION-CANDIDATE","provenance":"CONTROL-DEEP/RAW-REOPEN","novelty":"937-HOLD; merge Threshold Sense","latex":"L_{cs}(t)=G(t)-C(t)","action":"raw reopen + falsification controls"}
+  ],
+  "rejected": [
+    {"id":"A4-RJ-001","claim":"Chronological lifespan is the experiential denominator"},
+    {"id":"A4-RJ-002","claim":"More fidelity monotonically increases lifetime experiential value"},
+    {"id":"A4-RJ-003","claim":"Total generable content equals meaningful content supply"},
+    {"id":"A4-RJ-004","claim":"Material abundance removes meaningful scarcity"},
+    {"id":"A4-RJ-005","claim":"Visible institutional continuity implies unchanged causal support"},
+    {"id":"A4-RJ-006","claim":"Persistent high-resolution archive is phenomenologically neutral"}
+  ]
+}
